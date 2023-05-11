@@ -1,0 +1,53 @@
+@use '../abstracts/' as *;
+
+.hero {
+  background-image: url('../images/rectangle.svg');
+  background-repeat: no-repeat;
+  background-size: 80vw 70vw;
+  background-position: top 73px right;
+
+  &-grid {
+    padding: 3.125rem 0;
+  }
+
+  &-content {
+    padding: 0 1.875rem;
+    text-align: center;
+  }
+
+  &-img {
+    order: 1;
+    img {
+      width: 100%;
+    }
+  }
+
+  &-cta {
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.9375rem;
+    margin-top: 1.875rem;
+  }
+
+  @include breakpoint-up(large) {
+    background-size: 40vw 25vw;
+    background-position: top 150px right -30px;
+
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    &-content {
+      text-align: left;
+      width: 31.25rem;
+      margin-top: 3.125rem;
+    }
+
+    &-cta {
+      justify-content: flex-start;
+    }
+  }
+}

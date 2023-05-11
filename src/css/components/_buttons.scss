@@ -7,8 +7,8 @@
   background-color: $soft-red;
   border: 1px solid $soft-red;
   border-radius: 5px;
-  box-shadow: 0px 5px 5px $grayish-blue-tranparent;
-  transition: background-color 0.25s ease-out;
+  box-shadow: 0px 3px 5px $grayish-blue-tranparent;
+  transition: background-color 0.25s ease-in;
 }
 
 .btn-red:hover {
@@ -21,4 +21,36 @@
   border: 2px solid #fff;
   border-radius: 5px;
   padding: 0.5rem 3.125rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.625rem 0.9375rem;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px $grayish-blue-tranparent;
+}
+
+.btn-blue {
+  background-color: $soft-blue;
+  color: #fff;
+  border: 1px solid $soft-blue;
+  transition: 0.15s ease-in;
+  @extend .hero-btn;
+}
+
+.btn-white {
+  background: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  color: $very-dark-blue;
+  transition: 0.15s ease-in;
+  @extend .hero-btn;
+}
+
+.btn-blue:hover {
+  background-color: #fff;
+  color: $soft-blue;
+}
+
+.btn-white:hover {
+  border-color: $very-dark-blue;
 }

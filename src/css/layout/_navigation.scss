@@ -17,6 +17,10 @@
     align-items: center;
     gap: 3.75rem;
 
+    a {
+      font-size: 0.9375rem;
+    }
+
     li:not(:last-child) a {
       color: $very-dark-blue;
       transition: color 0.25s ease-out;
